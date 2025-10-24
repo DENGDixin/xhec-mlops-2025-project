@@ -30,7 +30,7 @@ infrastructure:
 flow_name: Abalone Training and Prediction Flow
 manifest_path: null
 storage: null
-path: /Users/xujialong/Downloads/xhec-mlops-2025-project
+path: D:\Desktop\HEC\Courses\08-ml-ops-artefact\xhec-mlops-2025-project # ← Change this
 entrypoint: src/flows/training_flow.py:training_flow
 parameter_openapi_schema:
   title: Parameters

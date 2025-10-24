@@ -43,9 +43,9 @@ def training_flow() -> None:
     train_info = task_train()
     pred_info = task_predict(PIPELINE_PATH, DATA_PATH, PREDICTION_OUT)
 
-    print("\n✅ Training completed!")
+    print("\n Training completed!")
     print(train_info)
-    print("\n✅ Prediction completed!")
+    print("\n Prediction completed!")
     print(pred_info)
     return {"train": train_info, "predict": pred_info}
 
