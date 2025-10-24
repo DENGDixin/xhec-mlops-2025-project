@@ -1,0 +1,42 @@
+{
+  "version": "v0.0.1",
+  "data_path": "data/abalone.csv",
+  "artifacts": {
+    "pipeline": "src\\web_service\\local_objects\\pipeline__v0.0.1.joblib"
+  },
+  "metrics_valid": {
+    "rmse": 2.2170508095836707,
+    "mae": 1.6026630727486886,
+    "r2": 0.5459382061327531
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "model": {
+    "type": "Ridge",
+    "alpha": 0.5
+  },
+  "preprocessing": {
+    "one_hot_drop": "first",
+    "handle_unknown": "ignore",
+    "scaler": "StandardScaler",
+    "categorical_cols": [
+      "Sex"
+    ],
+    "numerical_cols": [
+      "Length",
+      "Diameter",
+      "Height",
+      "Whole weight",
+      "Shucked weight",
+      "Viscera weight",
+      "Shell weight"
+    ],
+    "outlier_rule": "keep Height <= 0.35 on training only"
+  },
+  "meta": {
+    "python_version": "3.11.13",
+    "timestamp_utc": "2025-10-24T14-31-37Z"
+  }
+}
