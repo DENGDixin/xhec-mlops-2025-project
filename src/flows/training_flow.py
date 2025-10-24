@@ -38,7 +38,7 @@ def task_predict(pipeline_path: str, csv_path: str, out_csv: str) -> Dict[str, A
 
 # === Define main flow ===
 @flow(name="Abalone Training and Prediction Flow")
-def training_flow():
+def training_flow() -> None:
     """Prefect workflow: training + prediction."""
     train_info = task_train()
     pred_info = task_predict(PIPELINE_PATH, DATA_PATH, PREDICTION_OUT)
