@@ -132,17 +132,26 @@ Prefect will automatically retrain daily.
 ---
 
 ## 📝 Examples
-- [x] Screenshot 1: Prefect UI showing successful Flow Run
 
-  ![flow_runs](/Users/xujialong/Desktop/flow_runs.png)
+- [x] **Screenshot 1:** Prefect UI showing successful Flow Run  
 
-- [x] Screenshot 2: Deployments tab showing `abalone_local`
+  ![flow_run_success](../assets/flow_run_success.png)
 
-  ![deployments](/Users/xujialong/Desktop/deployments.png)
+- [x] **Screenshot 2:** Deployments tab showing `abalone_local`  
 
-- [x] Screenshot 3: Local artifacts under `src/web_service/local_objects/`
+  ![deployment_registered](../assets/deployment_registered.png)
 
-  ![objects_output](/Users/xujialong/Desktop/objects_output.png)
+- [x] **Screenshot 3:** Local artifacts generated under `src/web_service/local_objects/`  
+
+  ![local_objects_output](../assets/local_objects_output.png)
+
+- [x] **Screenshot 4:** Prefect dashboard overview  
+
+  ![prefect_dashboard](../assets/prefect_dashboard.png)
+
+- [x] **Screenshot 4:** Automated training pipeline view  
+
+  ![automated_pipeline](../assets/automated_pipeline.png)
 
 ---
 
