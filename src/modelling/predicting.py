@@ -7,8 +7,8 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from preprocessing import TARGET_COL, RINGS_COL
-from utils import load_joblib, setup_logger
+from .preprocessing import TARGET_COL, RINGS_COL
+from .utils import load_joblib, setup_logger
 
 
 def prepare_inference_frame(df: pd.DataFrame) -> pd.DataFrame:

@@ -11,7 +11,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
-from preprocessing import (
+from .preprocessing import (
     TARGET_COL,
     add_age_and_drop_leak,
     infer_feature_columns,
@@ -19,7 +19,7 @@ from preprocessing import (
     remove_train_outliers_height,
     split_x_y,
 )
-from utils import ensure_dir, project_meta, save_joblib, save_json, setup_logger
+from .utils import ensure_dir, project_meta, save_joblib, save_json, setup_logger
 
 DEFAULT_TEST_SIZE = 0.2
 DEFAULT_RANDOM_STATE = 42
