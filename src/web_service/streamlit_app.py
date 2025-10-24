@@ -34,21 +34,21 @@ if st.button("Predict Age", type="primary"):
         "Whole weight": whole_weight,
         "Shucked weight": shucked_weight,
         "Viscera weight": viscera_weight,
-        "Shell weight": shell_weight
+        "Shell weight": shell_weight,
     }
-    
+
     try:
         # Make request to FastAPI
         response = requests.post(API_URL, json=payload)
-        
+
         if response.status_code == 201:
             result = response.json()
             predicted_age = result["predicted_age"]
-            
+
             # Display result
             st.success(f"### Predicted Age: {predicted_age:.2f} years")
         else:
             st.error(f"Error: {response.text}")
-    
+
     except Exception as e:
         st.error(f"Failed to connect to API: {str(e)}")
